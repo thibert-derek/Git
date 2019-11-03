@@ -1,0 +1,13 @@
+$primary-color: gray;
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: $primary-color;
+    margin: 0;
+    padding: 0;
+    width: 95%;
+    max-width: 960px;
+    min-width: 660px;
+    margin: 0 auto;
+    line-height: 1.5;
+}
