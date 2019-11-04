@@ -5,7 +5,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Metalhead Music Store</title>
-    <link href="ui/styles.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <script src='js/main.js' defer></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 </head>
 
 <body>
@@ -23,7 +25,42 @@
         </nav>
     </header>
     <main>
-        
+        <div class="store">
+            <div class="title">
+                <h2>Store</h2>
+            </div>
+            <div class = "item">
+                <div class = "album">
+                    <img src = "images/andjusticeforall.jpg" alt="andjusticeforall">
+                </div>
+                <div class = "description">
+                    <h3>Metallica</h3>
+                    <h4>...And Justice For All</h4>
+                    <p>$12.99</p>
+                </div>
+                <div class = "cart">
+                    <button class="shoppingcart" type="button" name="button">
+                            Add To Cart
+                    </button>
+                </div>
+            </div>
+            <div class = "item">
+                    <div class = "album">
+                        <img src = "images/shownomercy.jpg" alt="andjusticeforall">
+                    </div>
+                    <div class = "description">
+                        <h3>Slayer</h3>
+                        <h4>Show No Mercy</h4>
+                        <p>$11.99</p>
+                    </div>
+                    <div class = "cart">
+                        <button class="shoppingcart" type="button" name="button">
+                                Add To Cart
+                        </button>
+                    </div>
+                </div>
+        </div>
     </main>
+    <footer>Copyright &copy; 2019</footer>
 </body>
 </html>
