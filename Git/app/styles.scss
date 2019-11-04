@@ -1,7 +1,11 @@
-$primary-color: gray;
+$primary-color: lightgray;
+$secondary-color: white;
+$fonts: Arial, Helvetica, sans-serif;
+$third-color:#24487C;
+$black: black;
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: $fonts;
     background-color: $primary-color;
     margin: 0;
     padding: 0;
@@ -10,4 +14,74 @@ body {
     min-width: 660px;
     margin: 0 auto;
     line-height: 1.5;
+}
+
+body > header > img{
+    width: 100%;
+    float: left;
+}
+
+main, body > header > nav {
+    clear: both;
+}
+
+body > header > nav li {
+    display: block;
+    background-color: $secondary-color;
+    float: left;
+    width: 33.33%;
+    text-align: center;
+    line-height: 2;
+    font-weight: bold;
+}
+
+body > header > nav a {
+    display: block;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+header::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav a:hover {
+    color: $black;
+}
+
+nav a.active {
+    color: $third-color;
+    background-color: $secondary-color;
+}
+
+body main {
+    padding-bottom: 20px;
+}
+
+.item {
+    background-color: $secondary-color;
+    width: 48%;
+    float: left;
+    text-align: center;
+    padding: 1%;
+}
+
+footer {
+    clear: both;
+    line-height: 2;
+    color: $secondary-color;
+    background-color: $third-color;
+    text-align: center;
+    width: 100%;
 }
